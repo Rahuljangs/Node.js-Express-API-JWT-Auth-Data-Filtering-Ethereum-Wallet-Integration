@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Authenticated Users</title>
+    <script>
+        async function showEtheriumBalance() {
+            try {
+                const response = await fetch('/ethereum-balance'); 
+                const balance = await response.text();
+                document.getElementById('ethereumBalance').innerText = `Ethereum Balance: ${balance} ETH`;
+            } catch (error) {
+                console.error('Error fetching Ethereum balance:', error);
+                document.getElementById('ethereumBalance').innerText = 'Error fetching Ethereum balance';
+            }
+        }
+    </script>
+    
+</head>
+<body>
+    <h1>Welcome, Authenticated User!</h1>
+    <p>This is a protected page accessible only to authenticated users.</p>
+    <button onclick="showEtheriumBalance()">Show Ethereum Balance</button>
+    <div id="ethereumBalance"></div>
+</body>
+</html>
