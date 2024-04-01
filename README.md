@@ -78,10 +78,12 @@ express-authentication-ethereum-balance/
 │   ├── categories.ejs
 │   ├── login.ejs
 │   └── signup.ejs
-├── config.js
-├── index.js
+├── src/
+│   ├── config.js
+│   ├── index.js
+│   ├── swagger.js
+│   └── swagger.json
 ├── package.json
-├── swagger.json
 └── README.md
 ```
 
@@ -117,3 +119,5 @@ express-authentication-ethereum-balance/
 
 Contributions are welcome! Please feel free to submit a pull request.
 
+
+Note : index(mongo).js uses local server created by mongodb compass.
