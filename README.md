@@ -1,6 +1,8 @@
 
 # Express Authentication and Ethereum Balance Retrieval
 
+Hosted link : https://cheerful-gear-tick.cyclic.app
+
 This is a Node.js application built using Express.js for authentication and web3.js to retrieve the Ethereum balance of a specified account. The application includes user authentication, protected routes, and integration with the Ethereum blockchain to fetch account balances.
 
 ## Table of Contents
